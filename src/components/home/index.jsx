@@ -56,7 +56,7 @@ const Home = () => {
                   </div>
                   <FontAwesomeIcon
                     icon={faHeart}
-                    className="absolute top-2 right-16 text-white text-2xl cursor-pointer"
+                    className="absolute top-2 right-8 text-white text-2xl cursor-pointer"
                   />
                 </div>
                 <div className="border-t border-gray-300 mb-8"></div>
