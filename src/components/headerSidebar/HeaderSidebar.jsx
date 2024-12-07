@@ -59,12 +59,12 @@ const HeaderSidebar = ({ activeMenu }) => {
             </header>
 
             {/* Sidebar */}
-            <aside className="w-1/5 flex flex-col h-[72%] bg-white shadow-md rounded-md justify-between fixed mt-36">
+            <aside className="w-1/5 flex flex-col h-[74%] bg-white shadow-md rounded-md justify-between fixed mt-36">
                 <div className="mt-4">
                     {menuItems.map((item, index) => (
                         <div
                             key={index}
-                            className={`flex items-center gap-6 px-16 py-2 text-sm ${activeMenu === item.label
+                            className={`flex items-center gap-6 px-16 py-3 text-sm ${activeMenu === item.label
                                     ? 'text-black font-bold border-l-4 border-[#0EC297]'
                                     : 'text-gray-600 hover:font-bold hover:text-black hover:border-l-4 hover:border-[#0EC297]'
                                 } transition-all`}
@@ -82,7 +82,7 @@ const HeaderSidebar = ({ activeMenu }) => {
                         </button>
                     </div>
                 </div>
-                <footer className="h-16 bg-[#f5f5f5] flex items-center justify-center mt-7">
+                <footer className="h-16 bg-[#f5f5f5] flex items-center justify-center mt-8">
                     <p className="text-sm text-gray-500 text-center">
                         2024 © Picture Bar <br /> Developed by Isha
                     </p>
