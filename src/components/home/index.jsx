@@ -24,7 +24,7 @@ const Home = () => {
             return (
               <div key={index} className="bg-white shadow-md rounded-md p-6 mb-4">
                 {/* Profile Section */}
-                <div className="flex items-center mb-4 ml-16">
+                <div className="flex items-center mb-4">
                   <img
                     src={images.dp[user.dpIndex]}
                     alt={user.name}
@@ -34,7 +34,7 @@ const Home = () => {
                     <p className="font-bold text-xl">{user.name}</p>
                     <p className="text-gray-500 text-lg">{user.id}</p>
                   </div>
-                  <div className="ml-auto mr-16">
+                  <div className="ml-auto">
                     <FontAwesomeIcon icon={faEllipsisVertical} className="text-gray-600 text-3xl cursor-pointer" />
                   </div>
                 </div>
@@ -62,7 +62,7 @@ const Home = () => {
                 <div className="border-t border-gray-300 mb-8"></div>
 
                 {/* Like, Comment, Share Section */}
-                <div className="flex items-center justify-between text-3xl ml-16 mb-6">
+                <div className="flex items-center justify-between text-3xl mb-4">
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-1">
                       <FontAwesomeIcon icon={faHeart} />
@@ -112,7 +112,7 @@ const Home = () => {
 
 
         {/* Picture Bar */}
-        <div className="absolute top-[120px] right-56 flex gap-6 justify-center text-xl font-semibold mt-8">
+        <div className="absolute top-[120px] right-36 flex gap-6 justify-center text-xl font-semibold mt-8">
           <p
             className={`cursor-pointer transition duration-300 ${view === 'artist' ? 'text-black' : 'text-gray-500'}`}
             onClick={() => handleViewChange('artist')}
@@ -126,7 +126,7 @@ const Home = () => {
             Photograph
           </p>
         </div>
-        <aside className="w-1/5  flex flex-col overflow-y-scroll no-scrollbar h-[90%]  mt-20">
+        <aside className="w-1/5  flex flex-col overflow-y-scroll no-scrollbar h-[86%]  mt-20">
           <div className="space-y-6 overflow-y-scroll no-scrollbar pr-4">
             {view === 'artist' && (
               images.pics.map((side, index) => (
@@ -137,16 +137,16 @@ const Home = () => {
                     alt={`Side${index + 1}`}
                     className="w-full h-full object-cover rounded-md"
                   />
-                  <div className="absolute inset-0 flex flex-col ml-24 mt-20 text-white">
+                  <div className="absolute inset-0 flex flex-col ml-20 mt-20 text-white">
                     <div className="bg-black bg-opacity-5 p-2 rounded-md">
                       <p
-                        className="font-Gilroy text-3xl font-semibold"
+                        className="font-Gilroy text-xl font-semibold"
                         style={{ fontFamily: 'Gilroy', fontWeight: '600' }}
                       >
                         {imageData[index].name}
                       </p>
                       <p
-                        className="font-Gilroy text-xl font-semibold mt-1"
+                        className="font-Gilroy text-sm font-semibold mt-1"
                         style={{ fontFamily: 'Gilroy' }}
                       >
                         {imageData[index].id}
