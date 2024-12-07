@@ -82,7 +82,7 @@ const HeaderSidebar = ({ activeMenu }) => {
                         </button>
                     </div>
                 </div>
-                <footer className="h-16 bg-[#f5f5f5] flex items-center justify-center mt-4">
+                <footer className="h-16 bg-[#f5f5f5] flex items-center justify-center mt-2">
                     <p className="text-sm text-gray-500 text-center">
                         2024 © Picture Bar <br /> Developed by Isha
                     </p>
