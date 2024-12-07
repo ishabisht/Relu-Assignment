@@ -40,7 +40,7 @@ const Home = () => {
                 </div>
 
                 {/* Post Summary */}
-                <p className="text-gray-600 text-xl mb-6 ml-16 mr-16">
+                <p className="text-gray-600 text-xl mb-6">
                   {post.summary}
                   <button className="text-red-500"> Read More..</button>
                 </p>
@@ -56,7 +56,7 @@ const Home = () => {
                   </div>
                   <FontAwesomeIcon
                     icon={faHeart}
-                    className="absolute top-2 right-24 text-white text-2xl cursor-pointer"
+                    className="absolute top-2 right-16 text-white text-2xl cursor-pointer"
                   />
                 </div>
                 <div className="border-t border-gray-300 mb-8"></div>
@@ -112,7 +112,7 @@ const Home = () => {
 
 
         {/* Picture Bar */}
-        <div className="absolute top-[120px] right-36 flex gap-6 justify-center text-xl font-semibold mt-8">
+        <div className="absolute top-[120px] right-32 flex gap-6 justify-center text-xl font-semibold mt-6">
           <p
             className={`cursor-pointer transition duration-300 ${view === 'artist' ? 'text-black' : 'text-gray-500'}`}
             onClick={() => handleViewChange('artist')}
