@@ -59,7 +59,7 @@ const HeaderSidebar = ({ activeMenu }) => {
             </header>
 
             {/* Sidebar */}
-            <aside className="w-1/5 flex flex-col h-[74%] bg-white shadow-md rounded-md justify-between fixed mt-36">
+            <aside className="w-1/5 flex flex-col h-[73%] bg-white shadow-md rounded-md justify-between fixed mt-36">
                 <div className="mt-4">
                     {menuItems.map((item, index) => (
                         <div
@@ -82,7 +82,7 @@ const HeaderSidebar = ({ activeMenu }) => {
                         </button>
                     </div>
                 </div>
-                <footer className="h-16 bg-[#f5f5f5] flex items-center justify-center mt-8">
+                <footer className="h-16 bg-[#f5f5f5] flex items-center justify-center mt-6">
                     <p className="text-sm text-gray-500 text-center">
                         2024 © Picture Bar <br /> Developed by Isha
                     </p>
