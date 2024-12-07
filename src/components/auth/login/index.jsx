@@ -35,34 +35,34 @@ const Login = () => {
             {userLoggedIn && <Navigate to={'/home'} replace={true} />}
 
             <main className="w-full h-screen flex self-center place-content-center place-items-center">
-                <div className="w-1/3 h-2/4 text-gray-500 space-y-10 p-8 shadow-xl border rounded-xl">
+                <div className="w-96 text-gray-500 space-y-10 p-8 shadow-xl border rounded-xl">
                     <div className="text-center">
                         <div className="mt-2">
-                            <h3 className="text-gray-800 text-xl font-semibold sm:text-3xl">Welcome Back</h3>
+                            <h3 className="text-gray-800 text-xl font-semibold sm:text-2xl">Welcome Back</h3>
                         </div>
                     </div>
                     <form onSubmit={onSubmit} className="space-y-5">
                         <div>
-                            <label className="text-lg text-gray-600 font-bold">Email</label>
+                            <label className="text-sm text-gray-600 font-bold">Email</label>
                             <input
                                 type="email"
                                 autoComplete="email"
                                 required
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                className="w-full mt-2 px-3 py-2 text-black bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg transition duration-300"
+                                className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg transition duration-300"
                             />
                         </div>
 
                         <div>
-                            <label className="text-lg text-gray-600 font-bold">Password</label>
+                            <label className="text-sm text-gray-600 font-bold">Password</label>
                             <input
                                 type="password"
                                 autoComplete="current-password"
                                 required
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
-                                className="w-full mt-2 px-3 py-2 text-black bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg transition duration-300"
+                                className="w-full mt-2 px-3 py-2 text-gray-500 bg-transparent outline-none border focus:border-indigo-600 shadow-sm rounded-lg transition duration-300"
                             />
                         </div>
 
@@ -79,7 +79,7 @@ const Login = () => {
                         </button>
                     </form>
                     <p className="text-center text-sm">
-                        Don't have an account? <Link to={'/register'} className="hover:underline font-bold text-lg">Sign up</Link>
+                        Don't have an account? <Link to={'/register'} className="hover:underline font-bold">Sign up</Link>
                     </p>
                 </div>
             </main>
